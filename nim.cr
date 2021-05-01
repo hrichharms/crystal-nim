@@ -26,7 +26,7 @@ end
 
 # check if a position is optimal
 def is_optimal(piles, optimizer)
-    # if the optimizer has won
+    # if the game is over
     if game_over(piles)
         return optimizer
     end
