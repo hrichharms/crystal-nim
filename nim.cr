@@ -1,3 +1,5 @@
+# Implementation of the game *Nim* with optimal cpu agent
+# https://en.wikipedia.org/wiki/Nim
 
 # game over function
 def game_over(piles)
@@ -87,8 +89,9 @@ while !game_over(piles)
     cpu_turn = !cpu_turn
 end
 
+# output game result
 if cpu_turn
-    puts "User Wins!"
-else
     puts "CPU Wins!"
+else
+    puts "Player Wins!"
 end
